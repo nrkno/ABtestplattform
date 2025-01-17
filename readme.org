@@ -53,7 +53,7 @@ Planleggingen av et eksperiment kan deles opp i fem steg.
    
    Avhenging av eskperimentdesignet/-typen bør plattformen levere grunnleggende analyser.
    
-5. Presentasjon, akrivering og gjentakelse av eksperimentet.
+5. Presentasjon, arkivering og gjentakelse av eksperimentet.
 
 
 
