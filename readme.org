@@ -1,5 +1,4 @@
-#+TITLE: Betraktninger før anskaffelse 
-#+TITLE: av en plattform for A/B-testing
+#+TITLE: Betraktninger før anskaffelse  av en plattform for A/B-testing
 #+AUTHOR: Emil
 #+DATE: 16. januar 2025
 * Innledning
