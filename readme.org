@@ -27,19 +27,19 @@ Planleggingen av et eskperiment handler om å ta spørsmålene man vil finne sva
 
 Planleggingen av et eksperiment kan deles opp i fem steg.
 
-1. Innsikt i fagområdet som spørsmålene eksperimentet skal svare på, stammer fra.
+1. Innsikt i fagområdet som spørsmålene eksperimentet skal svare på stammer fra.
 
-   Når man formulerer spørsmålene man vi finne svar på, er det viktig å gjøre seg kjent med hva andre har gjort for å finne svar på lignende spørsmål. Har vi gjort lignende eksperimenter før? Kan vi snakke med andre som kan ha gjort lignende eksperimenter? Hva har de tenkt, gjort, og ikke gjort? Hva måtte de passe på, og hvordan har det gått? Ved å lene seg på arbeidet til andre, kan man spare mye tid og frustrasjon på å tenke ut ting fra grunnen, og heller forbedre metoden som er blitt brukt tidligere.
+   Når man formulerer spørsmålene man vil finne svar på, er det viktig å gjøre seg kjent med hva andre har gjort for å finne svar på lignende spørsmål. Har vi gjort lignende eksperimenter før? Kan vi snakke med andre som kan ha gjort lignende eksperimenter? Hva har de tenkt, gjort, og ikke gjort? Hva måtte de passe på, og hvordan har det gått? Ved å lene seg på arbeidet til andre, kan man spare mye tid og frustrasjon på å tenke ut ting fra grunnen, og heller forbedre metoden som er blitt brukt tidligere.
 
    Med en A/B-testplattform som brukes av flere bedrifter, er det i prinsippet mulig å få tilgang på denne typen informasjon i plattformen gjennom en slags eksperimenthub.
 
 2. Operasjonalisering av eksperimentet. Dette innebærer:
    
-   - Velge ut varibler som skal måles, og hvordan de blir målt. I vår virksomhet dreier det seg hovedsaklig om data som vi får gjennom sporing i Snowplow. Vil det være hensiktsmessig at plattformen kan mates med data fra andre type målinger?
+   - Velge ut varibler som skal måles, og hvordan de blir målt. I vår virksomhet dreier det seg hovedsaklig om data som vi får gjennom sporing i Snowplow. Vil det være hensiktsmessig at plattformen kan mates med data fra andre type målinger? Trolig ikke.
    - Viktige invarianter som må holde for at eksperimentet skal være valid.
-   - Hvor ofte og hvor mye skal individene i eksperimentgruppene utsettes for behandlnigene?
+   - Hvor ofte og hvor mye skal individene i eksperimentgruppene utsettes for behandlingene?
    - Populasjonen man er interessert i må defineres. Skal eksperimentet gjøres kun på storskjerm? Skal det kun være barneprofiler med i eksperimentet?
-   - Måten utvalget blir gjort på må bestemmes. Ulike måter er blant andre fullstendig randomisert og blokkrandomisert. Dette er også noe man må bruke tidligere eksperimenter til i beslutningen.
+   - Måten utvalget blir gjort på må bestemmes. Ulike måter er blant andre fullstendig randomisert og blokkrandomisert. Dette er også noe man må se til tidligere eksperimenter i beslutningen.
    - Styrkeberegning for å finne størrelsen på utvalget. Sammenlign med tidligere eksperimenter.
    - Metode: teststatistikker, konfidensnivå, én- eller tohalet hypotesetest, tiltak for å skille på korrelasjon og kausalitet, regulering av p-verdi ved multiple tester.
    - Analyse av data
@@ -53,7 +53,7 @@ Planleggingen av et eksperiment kan deles opp i fem steg.
    
    Avhenging av eskperimentdesignet/-typen bør plattformen levere grunnleggende analyser.
    
-5. Presentasjon og gjentakelse av eksperimentet.
+5. Presentasjon, akrivering og gjentakelse av eksperimentet.
 
 
 
@@ -63,9 +63,9 @@ Planleggingen av et eksperiment kan deles opp i fem steg.
 - Kontroll- og behandlingsgrupper er fullstendig tilfeldig inndelt fra populasjonen som er av interesse for eksperimentet.
 - Vanligste og enkleste(?) typen eksperimentdesign.
 - Stiller noen krav til plattformen, jf. dokumentet til Tor.
-- Er det nødvendig å kunne regulere hyppigheten og størrelsen på dosen som individene blir utsatt for?
+- Er det nødvendig å kunne regulere hyppigheten og størrelsen på dosen som individene blir utsatt for? I visse sammenhenger er svaret ja.
 *** Randomisert blokkdesign
-- Deler populasjonen inn i blokker basert på én eller flere variabler, for eksempel aldersgrupper, og velger individer til kontroll- og behandlingsgrupper tilfeldig fra blokkene. Denne måten veier opp for forstyrrende faktorer som kommer av ulike preferanser, erfaring med tjenesten osv.
+- Deler populasjonen inn i blokker basert på én eller flere faktorer, for eksempel aldersgrupper, og velger individer til kontroll- og behandlingsgrupper tilfeldig fra blokkene. Denne måten veier opp for forstyrrende faktorer som kommer av ulike preferanser, erfaring med tjenesten osv.
 - Dette krever at plattformen kan dele inn i blokker basert på en faktor.
 *** Paneldata og longitudialt eksperimentdesign
 - Populasjonen deles inn i grupper som ved blokkeksperimenter, men det gjøres måliner gjennom hele eksperimentet, og gjerne i forbindelse med en dose.
